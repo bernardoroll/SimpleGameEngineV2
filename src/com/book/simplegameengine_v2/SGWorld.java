@@ -1,6 +1,7 @@
 package com.book.simplegameengine_v2;
 
 import android.graphics.Point;
+import android.graphics.RectF;
 
 public class SGWorld {
 	
@@ -16,6 +17,13 @@ public class SGWorld {
 	
 	public Point getDimensions() { 
 		return mDimensions;
+	}
+	
+	public boolean collisionTest(RectF R1, RectF R2) {
+		return R1.left < R2.right &&
+				R1.right > R2.left &&
+				R1.top < R2.bottom &&
+				R1.bottom > R2.top;
 	}
 
 }
