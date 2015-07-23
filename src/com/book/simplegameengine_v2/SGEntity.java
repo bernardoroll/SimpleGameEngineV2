@@ -126,5 +126,9 @@ public class SGEntity {
 	public RectF getBBoxPadding() {
 		return mBBoxPadding;
 	}
+	
+	public boolean colisionTest(RectF r2) {		
+		return mWorld.collisionTest(mBoundingBox, r2);		
+	}
 
 }
