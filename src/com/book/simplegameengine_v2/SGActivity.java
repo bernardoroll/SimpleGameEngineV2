@@ -17,8 +17,7 @@ public class SGActivity extends Activity
 	protected SGInputPublisher mInputPublisher = null;
 	private SGPreferences mPreferences;
 	
-	public enum SGOrientation 
-	{
+	public enum SGOrientation {
 		LANDSCAPE,
 		PORTRAIT
 	}
